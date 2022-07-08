@@ -1,67 +1,83 @@
-import { HardhatUserConfig, task } from "hardhat/config"
-import "@nomiclabs/hardhat-etherscan"
-import "@nomiclabs/hardhat-waffle"
-import "hardhat-gas-reporter"
-import "@typechain/hardhat"
-
-import dotenv from "dotenv"
-import { CHAIN, NETWORK_METADATA } from "@gambitdao/gmx-middleware"
-dotenv.config({ path: "../.env" })
-
-
-const key = process.env.ACCOUNT
-const accounts = key ? [key] : []
+import 'dotenv/config';
+import {HardhatUserConfig} from 'hardhat/config';
+import 'hardhat-deploy';
+import '@nomiclabs/hardhat-ethers';
+import 'hardhat-gas-reporter';
+import '@typechain/hardhat';
+import 'solidity-coverage';
+import 'hardhat-deploy-tenderly';
+import './tasks';
+import {node_url, accounts, addForkConfiguration, etherscan} from './utils/network';
 
 const config: HardhatUserConfig = {
-  networks: {
-    arbitrumTestnet: {
-      chainId: CHAIN.ARBITRUM_RINKBY,
-      url: NETWORK_METADATA[CHAIN.ARBITRUM_RINKBY].rpcUrls[0],
-      accounts,
-    },
-    ropsten: {
-      chainId: CHAIN.ETH_ROPSTEN,
-      url: NETWORK_METADATA[CHAIN.ETH_ROPSTEN].rpcUrls[0],
-      accounts,
-    },
-    arbitrum: {
-      chainId: CHAIN.ARBITRUM,
-      url: NETWORK_METADATA[CHAIN.ARBITRUM].rpcUrls[0],
-      accounts,
-    },
-  },
   solidity: {
     compilers: [
       {
-        version: "0.8.4",
+        version: '0.8.9',
         settings: {
           optimizer: {
             enabled: true,
-            runs: 1,
-          },
-        },
-      },
-      {
-        version: "0.8.1",
-        settings: {
-          optimizer: {
-            enabled: true,
-            runs: 1,
+            runs: 2000,
           },
         },
       },
     ],
   },
-  etherscan: {
-    apiKey: process.env.ARBISCAN,
+  namedAccounts: {
+    deployer: 0,
+    alice: 1,
+    bob: 2,
+    mark: 3,
+  },
+  networks: addForkConfiguration({
+    hardhat: {
+      initialBaseFeePerGas: 0,
+    },
+    localhost: {
+      url: node_url('localhost'),
+      accounts: accounts(),
+    },
+    arbitrum_rinkeby: {
+      url: node_url('arbitrum_rinkeby'),
+      accounts: accounts('arbitrum_rinkeby'),
+      verify: etherscan('arbitrum_rinkeby'),
+    },
+    arbitrum: {
+      url: node_url('arbitrum'),
+      accounts: accounts('arbitrum'),
+      verify: etherscan('arbitrum'),
+    },
+  }),
+  paths: {
+    sources: 'src',
   },
   gasReporter: {
-    enabled: !!process.env.REPORT_GAS,
-    currency: "USD",
-    coinmarketcap: process.env.COINMARKETCAP,
-    token: "ETH",
-    gasPriceApi: "https://api.arbiscan.io/api?module=proxy&action=eth_gasPrice",
+    enabled: process.env.REPORT_GAS ? true : false,
+    currency: 'EUR',
+    coinmarketcap: process.env.COINMARKETCAP_API_KEY,
+    gasPrice: 100,
+    token: 'ETH',
+    gasPriceApi: 'https://api.arbiscan.io/api?module=proxy&action=eth_gasPrice',
+    onlyCalledMethods: false,
+    showTimeSpent: true,
+    src: 'src',
+    showMethodSig: true,
   },
-}
+  typechain: {
+    outDir: 'typechain',
+    target: 'ethers-v5',
+  },
+  mocha: {
+    timeout: 0,
+  },
+  external: process.env.HARDHAT_FORK
+    ? {
+        deployments: {
+          hardhat: ['deployments/' + process.env.HARDHAT_FORK],
+          localhost: ['deployments/' + process.env.HARDHAT_FORK],
+        },
+      }
+    : undefined,
+};
 
-export default config
+export default config;

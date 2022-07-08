@@ -1,0 +1,236 @@
+{
+  "address": "0x265B3188579AaC5c4eCc66c1bf2bB1D38937C556",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "CreateFail",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract Authority",
+          "name": "newAuthority",
+          "type": "address"
+        }
+      ],
+      "name": "AuthorityUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "clone",
+          "type": "address"
+        }
+      ],
+      "name": "NewSale",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnerUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "authority",
+      "outputs": [
+        {
+          "internalType": "contract Authority",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "clone",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract Authority",
+          "name": "newAuthority",
+          "type": "address"
+        }
+      ],
+      "name": "setAuthority",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x04ad1c90057641747d9a03c71e0fbb095af486bb1a23fe4188f45f0a56c31343",
+  "receipt": {
+    "to": null,
+    "from": "0xF6743941C28bde28e337DBc29356f2319B41Fa3c",
+    "contractAddress": "0x265B3188579AaC5c4eCc66c1bf2bB1D38937C556",
+    "transactionIndex": 0,
+    "gasUsed": "7358316",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000100000000000000000000000000004000000000080000000002000000000000000000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000000000000000000000000080000000000000000000000000000000008000000001000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000400000000000001000000020000000000000000000020000000000000000000000000000000000000000000000",
+    "blockHash": "0xde9abeeafdf34215fcaefd2168fde30832adce5eb28b76507d56a319c94433cb",
+    "transactionHash": "0x04ad1c90057641747d9a03c71e0fbb095af486bb1a23fe4188f45f0a56c31343",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 13481651,
+        "transactionHash": "0x04ad1c90057641747d9a03c71e0fbb095af486bb1a23fe4188f45f0a56c31343",
+        "address": "0x265B3188579AaC5c4eCc66c1bf2bB1D38937C556",
+        "topics": [
+          "0x8292fce18fa69edf4db7b94ea2e58241df0ae57f97e0a6c9b29067028bf92d76",
+          "0x000000000000000000000000f6743941c28bde28e337dbc29356f2319b41fa3c",
+          "0x000000000000000000000000f6743941c28bde28e337dbc29356f2319b41fa3c"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0xde9abeeafdf34215fcaefd2168fde30832adce5eb28b76507d56a319c94433cb"
+      },
+      {
+        "transactionIndex": 0,
+        "blockNumber": 13481651,
+        "transactionHash": "0x04ad1c90057641747d9a03c71e0fbb095af486bb1a23fe4188f45f0a56c31343",
+        "address": "0x265B3188579AaC5c4eCc66c1bf2bB1D38937C556",
+        "topics": [
+          "0xa3396fd7f6e0a21b50e5089d2da70d5ac0a3bbbd1f617a93f134b76389980198",
+          "0x000000000000000000000000f6743941c28bde28e337dbc29356f2319b41fa3c",
+          "0x0000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "data": "0x",
+        "logIndex": 1,
+        "blockHash": "0xde9abeeafdf34215fcaefd2168fde30832adce5eb28b76507d56a319c94433cb"
+      }
+    ],
+    "blockNumber": 13481651,
+    "cumulativeGasUsed": "3497076",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "d9b63976ce6dd21bf7032ddac5023b9f",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"CreateFail\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"contract Authority\",\"name\":\"newAuthority\",\"type\":\"address\"}],\"name\":\"AuthorityUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"clone\",\"type\":\"address\"}],\"name\":\"NewSale\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnerUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"authority\",\"outputs\":[{\"internalType\":\"contract Authority\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"implementation\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"clone\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract Authority\",\"name\":\"newAuthority\",\"type\":\"address\"}],\"name\":\"setAuthority\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"setOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/lab/sales/Factory.sol\":\"SaleFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"@rari-capital/solmate/src/auth/Auth.sol\":{\"content\":\"// SPDX-License-Identifier: AGPL-3.0-only\\npragma solidity >=0.8.0;\\n\\n/// @notice Provides a flexible and updatable auth pattern which is completely separate from application logic.\\n/// @author Solmate (https://github.com/Rari-Capital/solmate/blob/main/src/auth/Auth.sol)\\n/// @author Modified from Dappsys (https://github.com/dapphub/ds-auth/blob/master/src/auth.sol)\\nabstract contract Auth {\\n    event OwnerUpdated(address indexed user, address indexed newOwner);\\n\\n    event AuthorityUpdated(address indexed user, Authority indexed newAuthority);\\n\\n    address public owner;\\n\\n    Authority public authority;\\n\\n    constructor(address _owner, Authority _authority) {\\n        owner = _owner;\\n        authority = _authority;\\n\\n        emit OwnerUpdated(msg.sender, _owner);\\n        emit AuthorityUpdated(msg.sender, _authority);\\n    }\\n\\n    modifier requiresAuth() virtual {\\n        require(isAuthorized(msg.sender, msg.sig), \\\"UNAUTHORIZED\\\");\\n\\n        _;\\n    }\\n\\n    function isAuthorized(address user, bytes4 functionSig) internal view virtual returns (bool) {\\n        Authority auth = authority; // Memoizing authority saves us a warm SLOAD, around 100 gas.\\n\\n        // Checking if the caller is the owner only after calling the authority saves gas in most cases, but be\\n        // aware that this makes protected functions uncallable even to the owner if the authority is out of order.\\n        return (address(auth) != address(0) && auth.canCall(user, address(this), functionSig)) || user == owner;\\n    }\\n\\n    function setAuthority(Authority newAuthority) public virtual {\\n        // We check if the caller is the owner first because we want to ensure they can\\n        // always swap out the authority even if it's reverting or using up a lot of gas.\\n        require(msg.sender == owner || authority.canCall(msg.sender, address(this), msg.sig));\\n\\n        authority = newAuthority;\\n\\n        emit AuthorityUpdated(msg.sender, newAuthority);\\n    }\\n\\n    function setOwner(address newOwner) public virtual requiresAuth {\\n        owner = newOwner;\\n\\n        emit OwnerUpdated(msg.sender, newOwner);\\n    }\\n}\\n\\n/// @notice A generic interface for a contract which provides authorization data to an Auth instance.\\n/// @author Solmate (https://github.com/Rari-Capital/solmate/blob/main/src/auth/Auth.sol)\\n/// @author Modified from Dappsys (https://github.com/dapphub/ds-auth/blob/master/src/auth.sol)\\ninterface Authority {\\n    function canCall(\\n        address user,\\n        address target,\\n        bytes4 functionSig\\n    ) external view returns (bool);\\n}\\n\",\"keccak256\":\"0xb4564103cc4b8eba1d359c964ef8d9b0eda15f7a0f331bee2c1e33f4785720cc\",\"license\":\"AGPL-3.0-only\"},\"clones-with-immutable-args/ClonesWithImmutableArgs.sol\":{\"content\":\"// SPDX-License-Identifier: BSD\\n\\npragma solidity ^0.8.4;\\n\\n/// @title ClonesWithImmutableArgs\\n/// @author wighawag, zefram.eth\\n/// @notice Enables creating clone contracts with immutable args\\nlibrary ClonesWithImmutableArgs {\\n    error CreateFail();\\n\\n    /// @notice Creates a clone proxy of the implementation contract, with immutable args\\n    /// @dev data cannot exceed 65535 bytes, since 2 bytes are used to store the data length\\n    /// @param implementation The implementation contract to clone\\n    /// @param data Encoded immutable args\\n    /// @return instance The address of the created clone\\n    function clone(address implementation, bytes memory data)\\n        internal\\n        returns (address instance)\\n    {\\n        // unrealistic for memory ptr or data length to exceed 256 bits\\n        unchecked {\\n            uint256 extraLength = data.length + 2; // +2 bytes for telling how much data there is appended to the call\\n            uint256 creationSize = 0x43 + extraLength;\\n            uint256 runSize = creationSize - 11;\\n            uint256 dataPtr;\\n            uint256 ptr;\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly {\\n                ptr := mload(0x40)\\n\\n                // -------------------------------------------------------------------------------------------------------------\\n                // CREATION (11 bytes)\\n                // -------------------------------------------------------------------------------------------------------------\\n\\n                // 3d          | RETURNDATASIZE        | 0                       | \\u2013\\n                // 61 runtime  | PUSH2 runtime (r)     | r 0                     | \\u2013\\n                mstore(\\n                    ptr,\\n                    0x3d61000000000000000000000000000000000000000000000000000000000000\\n                )\\n                mstore(add(ptr, 0x02), shl(240, runSize)) // size of the contract running bytecode (16 bits)\\n\\n                // creation size = 0b\\n                // 80          | DUP1                  | r r 0                   | \\u2013\\n                // 60 creation | PUSH1 creation (c)    | c r r 0                 | \\u2013\\n                // 3d          | RETURNDATASIZE        | 0 c r r 0               | \\u2013\\n                // 39          | CODECOPY              | r 0                     | [0-2d]: runtime code\\n                // 81          | DUP2                  | 0 c  0                  | [0-2d]: runtime code\\n                // f3          | RETURN                | 0                       | [0-2d]: runtime code\\n                mstore(\\n                    add(ptr, 0x04),\\n                    0x80600b3d3981f300000000000000000000000000000000000000000000000000\\n                )\\n\\n                // -------------------------------------------------------------------------------------------------------------\\n                // RUNTIME\\n                // -------------------------------------------------------------------------------------------------------------\\n\\n                // 36          | CALLDATASIZE          | cds                     | \\u2013\\n                // 3d          | RETURNDATASIZE        | 0 cds                   | \\u2013\\n                // 3d          | RETURNDATASIZE        | 0 0 cds                 | \\u2013\\n                // 37          | CALLDATACOPY          | \\u2013                       | [0, cds] = calldata\\n                // 61          | PUSH2 extra           | extra                   | [0, cds] = calldata\\n                mstore(\\n                    add(ptr, 0x0b),\\n                    0x363d3d3761000000000000000000000000000000000000000000000000000000\\n                )\\n                mstore(add(ptr, 0x10), shl(240, extraLength))\\n\\n                // 60 0x38     | PUSH1 0x38            | 0x38 extra              | [0, cds] = calldata // 0x38 (56) is runtime size - data\\n                // 36          | CALLDATASIZE          | cds 0x38 extra          | [0, cds] = calldata\\n                // 39          | CODECOPY              | _                       | [0, cds] = calldata\\n                // 3d          | RETURNDATASIZE        | 0                       | [0, cds] = calldata\\n                // 3d          | RETURNDATASIZE        | 0 0                     | [0, cds] = calldata\\n                // 3d          | RETURNDATASIZE        | 0 0 0                   | [0, cds] = calldata\\n                // 36          | CALLDATASIZE          | cds 0 0 0               | [0, cds] = calldata\\n                // 61 extra    | PUSH2 extra           | extra cds 0 0 0         | [0, cds] = calldata\\n                mstore(\\n                    add(ptr, 0x12),\\n                    0x603836393d3d3d36610000000000000000000000000000000000000000000000\\n                )\\n                mstore(add(ptr, 0x1b), shl(240, extraLength))\\n\\n                // 01          | ADD                   | cds+extra 0 0 0         | [0, cds] = calldata\\n                // 3d          | RETURNDATASIZE        | 0 cds 0 0 0             | [0, cds] = calldata\\n                // 73 addr     | PUSH20 0x123\\u2026         | addr 0 cds 0 0 0        | [0, cds] = calldata\\n                mstore(\\n                    add(ptr, 0x1d),\\n                    0x013d730000000000000000000000000000000000000000000000000000000000\\n                )\\n                mstore(add(ptr, 0x20), shl(0x60, implementation))\\n\\n                // 5a          | GAS                   | gas addr 0 cds 0 0 0    | [0, cds] = calldata\\n                // f4          | DELEGATECALL          | success 0               | [0, cds] = calldata\\n                // 3d          | RETURNDATASIZE        | rds success 0           | [0, cds] = calldata\\n                // 82          | DUP3                  | 0 rds success 0         | [0, cds] = calldata\\n                // 80          | DUP1                  | 0 0 rds success 0       | [0, cds] = calldata\\n                // 3e          | RETURNDATACOPY        | success 0               | [0, rds] = return data (there might be some irrelevant leftovers in memory [rds, cds] when rds < cds)\\n                // 90          | SWAP1                 | 0 success               | [0, rds] = return data\\n                // 3d          | RETURNDATASIZE        | rds 0 success           | [0, rds] = return data\\n                // 91          | SWAP2                 | success 0 rds           | [0, rds] = return data\\n                // 60 0x36     | PUSH1 0x36            | 0x36 sucess 0 rds       | [0, rds] = return data\\n                // 57          | JUMPI                 | 0 rds                   | [0, rds] = return data\\n                // fd          | REVERT                | \\u2013                       | [0, rds] = return data\\n                // 5b          | JUMPDEST              | 0 rds                   | [0, rds] = return data\\n                // f3          | RETURN                | \\u2013                       | [0, rds] = return data\\n\\n                mstore(\\n                    add(ptr, 0x34),\\n                    0x5af43d82803e903d91603657fd5bf30000000000000000000000000000000000\\n                )\\n            }\\n\\n            // -------------------------------------------------------------------------------------------------------------\\n            // APPENDED DATA (Accessible from extcodecopy)\\n            // (but also send as appended data to the delegatecall)\\n            // -------------------------------------------------------------------------------------------------------------\\n\\n            extraLength -= 2;\\n            uint256 counter = extraLength;\\n            uint256 copyPtr = ptr + 0x43;\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly {\\n                dataPtr := add(data, 32)\\n            }\\n            for (; counter >= 32; counter -= 32) {\\n                // solhint-disable-next-line no-inline-assembly\\n                assembly {\\n                    mstore(copyPtr, mload(dataPtr))\\n                }\\n\\n                copyPtr += 32;\\n                dataPtr += 32;\\n            }\\n            uint256 mask = ~(256**(32 - counter) - 1);\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly {\\n                mstore(copyPtr, and(mload(dataPtr), mask))\\n            }\\n            copyPtr += counter;\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly {\\n                mstore(copyPtr, shl(240, extraLength))\\n            }\\n            // solhint-disable-next-line no-inline-assembly\\n            assembly {\\n                instance := create(0, ptr, creationSize)\\n            }\\n            if (instance == address(0)) {\\n                revert CreateFail();\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x0c6a218a9724ce6d754db22b162600adbdbac41bfe4dd4eecf6b6d77c74eefe7\",\"license\":\"BSD\"},\"src/lab/sales/Factory.sol\":{\"content\":\"//SPDX-License-Identifier: MIT\\npragma solidity ^0.8.9;\\n\\nimport {ClonesWithImmutableArgs} from \\\"clones-with-immutable-args/ClonesWithImmutableArgs.sol\\\";\\nimport {Auth, Authority} from \\\"@rari-capital/solmate/src/auth/Auth.sol\\\";\\n\\ncontract SaleFactory is Auth(msg.sender, Authority(address(0))) {\\n    using ClonesWithImmutableArgs for address;\\n\\n    event NewSale(address indexed implementation, address indexed clone);\\n\\n    function deploy(address implementation, bytes memory data) external requiresAuth returns (address clone) {\\n        clone = implementation.clone(data);\\n\\n        emit NewSale(implementation, clone);\\n    }\\n}\\n\",\"keccak256\":\"0x70c449d08f7e8a31c6481ac28e6a272f25c653cb3f46c1745f653caa66ff2c7a\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060008054336001600160a01b03199182168117835560018054909216909155604051909190829081907f8292fce18fa69edf4db7b94ea2e58241df0ae57f97e0a6c9b29067028bf92d76908490a36040516001600160a01b0382169033907fa3396fd7f6e0a21b50e5089d2da70d5ac0a3bbbd1f617a93f134b7638998019890600090a35050610876806100a66000396000f3fe608060405234801561001057600080fd5b50600436106100675760003560e01c80638da5cb5b116100505780638da5cb5b14610094578063bf7e214f146100c3578063e97fac05146100d657600080fd5b806313af40351461006c5780637a9e5e4b14610081575b600080fd5b61007f61007a366004610707565b6100e9565b005b61007f61008f366004610707565b6101e5565b6000546100a7906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6001546100a7906001600160a01b031681565b6100a76100e436600461075a565b61032a565b610117336000357fffffffff000000000000000000000000000000000000000000000000000000001661041b565b610182576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f554e415554484f52495a4544000000000000000000000000000000000000000060448201526064015b60405180910390fd5b600080547fffffffffffffffffffffffff0000000000000000000000000000000000000000166001600160a01b0383169081178255604051909133917f8292fce18fa69edf4db7b94ea2e58241df0ae57f97e0a6c9b29067028bf92d769190a350565b6000546001600160a01b03163314806102bd57506001546040517fb70096130000000000000000000000000000000000000000000000000000000081523360048201523060248201526000357fffffffff000000000000000000000000000000000000000000000000000000001660448201526001600160a01b039091169063b70096139060640160206040518083038186803b15801561028557600080fd5b505afa158015610299573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102bd919061081e565b6102c657600080fd5b600180547fffffffffffffffffffffffff0000000000000000000000000000000000000000166001600160a01b03831690811790915560405133907fa3396fd7f6e0a21b50e5089d2da70d5ac0a3bbbd1f617a93f134b7638998019890600090a350565b600061035a336000357fffffffff000000000000000000000000000000000000000000000000000000001661041b565b6103c0576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f554e415554484f52495a454400000000000000000000000000000000000000006044820152606401610179565b6103d36001600160a01b03841683610514565b9050806001600160a01b0316836001600160a01b03167f83f35c3d500677e8300bf0bbf471882d821904d2b410c5df88c5ca5d3ec0907a60405160405180910390a392915050565b6001546000906001600160a01b031680158015906104f457506040517fb70096130000000000000000000000000000000000000000000000000000000081526001600160a01b0385811660048301523060248301527fffffffff000000000000000000000000000000000000000000000000000000008516604483015282169063b70096139060640160206040518083038186803b1580156104bc57600080fd5b505afa1580156104d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104f4919061081e565b8061050c57506000546001600160a01b038581169116145b949350505050565b80516040517f3d610000000000000000000000000000000000000000000000000000000000008152603a820160f081811b6002848101919091527f80600b3d3981f30000000000000000000000000000000000000000000000000060048501527f363d3d3761000000000000000000000000000000000000000000000000000000600b8501528401901b601083018190527f603836393d3d3d366100000000000000000000000000000000000000000000006012840152601b8301527f013d730000000000000000000000000000000000000000000000000000000000601d830152606085901b6020808401919091527f5af43d82803e903d91603657fd5bf3000000000000000000000000000000000060348401526000939260458401929186019084604382015b6020821061065c5783518152602093840193601f19909201910161063d565b83517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60208490036101000a0119908116825260f088901b91830191825286846000f098506001600160a01b0389166106e1576040517febfef18800000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b505050505050505092915050565b6001600160a01b038116811461070457600080fd5b50565b60006020828403121561071957600080fd5b8135610724816106ef565b9392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000806040838503121561076d57600080fd5b8235610778816106ef565b9150602083013567ffffffffffffffff8082111561079557600080fd5b818501915085601f8301126107a957600080fd5b8135818111156107bb576107bb61072b565b604051601f8201601f19908116603f011681019083821181831017156107e3576107e361072b565b816040528281528860208487010111156107fc57600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b60006020828403121561083057600080fd5b8151801515811461072457600080fdfea264697066735822122001b5005b1b908b409f4f75408027f649129b53feb4853c33b3a8eb6ccf6ec4dc64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100675760003560e01c80638da5cb5b116100505780638da5cb5b14610094578063bf7e214f146100c3578063e97fac05146100d657600080fd5b806313af40351461006c5780637a9e5e4b14610081575b600080fd5b61007f61007a366004610707565b6100e9565b005b61007f61008f366004610707565b6101e5565b6000546100a7906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6001546100a7906001600160a01b031681565b6100a76100e436600461075a565b61032a565b610117336000357fffffffff000000000000000000000000000000000000000000000000000000001661041b565b610182576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f554e415554484f52495a4544000000000000000000000000000000000000000060448201526064015b60405180910390fd5b600080547fffffffffffffffffffffffff0000000000000000000000000000000000000000166001600160a01b0383169081178255604051909133917f8292fce18fa69edf4db7b94ea2e58241df0ae57f97e0a6c9b29067028bf92d769190a350565b6000546001600160a01b03163314806102bd57506001546040517fb70096130000000000000000000000000000000000000000000000000000000081523360048201523060248201526000357fffffffff000000000000000000000000000000000000000000000000000000001660448201526001600160a01b039091169063b70096139060640160206040518083038186803b15801561028557600080fd5b505afa158015610299573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102bd919061081e565b6102c657600080fd5b600180547fffffffffffffffffffffffff0000000000000000000000000000000000000000166001600160a01b03831690811790915560405133907fa3396fd7f6e0a21b50e5089d2da70d5ac0a3bbbd1f617a93f134b7638998019890600090a350565b600061035a336000357fffffffff000000000000000000000000000000000000000000000000000000001661041b565b6103c0576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600c60248201527f554e415554484f52495a454400000000000000000000000000000000000000006044820152606401610179565b6103d36001600160a01b03841683610514565b9050806001600160a01b0316836001600160a01b03167f83f35c3d500677e8300bf0bbf471882d821904d2b410c5df88c5ca5d3ec0907a60405160405180910390a392915050565b6001546000906001600160a01b031680158015906104f457506040517fb70096130000000000000000000000000000000000000000000000000000000081526001600160a01b0385811660048301523060248301527fffffffff000000000000000000000000000000000000000000000000000000008516604483015282169063b70096139060640160206040518083038186803b1580156104bc57600080fd5b505afa1580156104d0573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104f4919061081e565b8061050c57506000546001600160a01b038581169116145b949350505050565b80516040517f3d610000000000000000000000000000000000000000000000000000000000008152603a820160f081811b6002848101919091527f80600b3d3981f30000000000000000000000000000000000000000000000000060048501527f363d3d3761000000000000000000000000000000000000000000000000000000600b8501528401901b601083018190527f603836393d3d3d366100000000000000000000000000000000000000000000006012840152601b8301527f013d730000000000000000000000000000000000000000000000000000000000601d830152606085901b6020808401919091527f5af43d82803e903d91603657fd5bf3000000000000000000000000000000000060348401526000939260458401929186019084604382015b6020821061065c5783518152602093840193601f19909201910161063d565b83517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff60208490036101000a0119908116825260f088901b91830191825286846000f098506001600160a01b0389166106e1576040517febfef18800000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b505050505050505092915050565b6001600160a01b038116811461070457600080fd5b50565b60006020828403121561071957600080fd5b8135610724816106ef565b9392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6000806040838503121561076d57600080fd5b8235610778816106ef565b9150602083013567ffffffffffffffff8082111561079557600080fd5b818501915085601f8301126107a957600080fd5b8135818111156107bb576107bb61072b565b604051601f8201601f19908116603f011681019083821181831017156107e3576107e361072b565b816040528281528860208487010111156107fc57600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b60006020828403121561083057600080fd5b8151801515811461072457600080fdfea264697066735822122001b5005b1b908b409f4f75408027f649129b53feb4853c33b3a8eb6ccf6ec4dc64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 2977,
+        "contract": "src/lab/sales/Factory.sol:SaleFactory",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 2980,
+        "contract": "src/lab/sales/Factory.sol:SaleFactory",
+        "label": "authority",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_contract(Authority)3131"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_contract(Authority)3131": {
+        "encoding": "inplace",
+        "label": "contract Authority",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

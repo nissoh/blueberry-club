@@ -4,19 +4,9 @@
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "./dist",
-    "noEmit": true,
-    "declaration": true,
-    "composite": true
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
   },
-  "include": [
-    "./scripts",
-    "./test",
-    "./utils",
-    "./tasks",
-    "./typechain-types"
-  ],
-  "files": [
-    "./hardhat.config.ts"
-  ]
+  "include": ["hardhat.config.ts", "./scripts", "./deploy", "./test", "typechain/**/*"]
 }
